@@ -457,3 +457,44 @@ Disassembly of section .text:
 
 
 # Unique Instructions
+
+
+
+Number of different instructions: 35
+List of unique instructions:
+bne
+sb
+li
+andi
+bltu
+ret
+addi
+negw
+lw
+lbu
+slli
+bltz
+sub
+jal
+ld
+j
+blt
+addiw
+beq
+beqz
+jr
+srai
+auipc
+bgeu
+sw
+bnez
+or
+and
+sllw
+ecall
+mv
+jalr
+add
+sext.w
+sd
+
