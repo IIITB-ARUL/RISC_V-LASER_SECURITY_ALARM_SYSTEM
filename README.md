@@ -454,3 +454,6 @@ Disassembly of section .text:
    10610:	0007b503          	ld	a0,0(a5)
    10614:	00008067          	ret
 ```
+
+
+# Unique Instructions
