@@ -40,7 +40,7 @@ void main() {
                     startTime++;
                 } else {
                     sensorValue = sensorPin; // Read the sensor (assuming it's an analog sensor)
-                    // You may need to use an ADC to read the analog sensor value
+                    // we need an ADC to read the analog sensor value
 
                     if (sensorValue > laserThreshold) {
                         alarmState = 1;
