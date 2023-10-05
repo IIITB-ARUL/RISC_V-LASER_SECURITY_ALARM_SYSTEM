@@ -105,12 +105,7 @@ void main() {
 
 ```
 
-# Converting C code into Assembly Language
 
-```
-riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o alar2.o alar1.c load.S
-riscv64-unknown-elf-objdump -d alar2.o
-```
 
 
 
