@@ -27,56 +27,82 @@ The LDR is sensitive to light and puts out a voltage when the laser light hits i
 
 int laserPin;
 int sensorPin;
-int buttonPin;
-int buzzerPin;
+int buttonPin=1;
+int buzzerPin=0;
 
-int laserThreshold=100;
+int laserThreshold=10;
 
-int alarmState = 0; // Define alarmState as a bit of P1
+ 
 
-unsigned int startTime = 0;
-unsigned int sensorValue = 0;
+int startTime = 0;
+int sensorValue = 0;
+int laserPin_value = 0;
+int buttonvalue;
+int alarmState = 0;
+int buzzervalue;
 
 void main() {
-    laserPin = 0;  // Configure laserPin as output
-    buzzerPin = 0; // Configure buzzerPin as output
 
-    buttonPin = 1; // Enable the pull-up resistor for buttonPin
-    alarmState = 0; // Initialize alarmState as 0
-
+   
     while (1) {
         switch (alarmState) {
             case 0:
                 if (startTime == 0) {
                     startTime = 1; // Start the 1-second timer
                     laserPin = 1;
+                    laserPin_value = laserPin*2;
+                    asm(
+			"or x30, x30, %0\n\t" 
+			:"=r"(laserPin_value));
                 } else if (startTime < 1000) {
                     // Increment the timer
                     startTime++;
                 } else {
-                    sensorValue = sensorPin; // Read the sensor (assuming it's an analog sensor)
-                    // we need an ADC to read the analog sensor value
-
+                    sensorValue = sensorPin*16; // Read the sensor 
+                    asm(
+			"andi %0, x30, 1\n\t"
+			:"=r"(sensorValue));
                     if (sensorValue > laserThreshold) {
                         alarmState = 1;
+                        buzzerPin=1;
+                        buzzervalue=buzzerPin*4;
+                         asm(
+				"or x30, x30, %0\n\t" 
+				:"=r"(buzzervalue));
                     }
                     laserPin = 0;
+                    laserPin_value = laserPin*2;
+                     asm(
+			"or x30, x30, %0\n\t" 
+			:"=r"(laserPin_value));
+                    
                     startTime = 0; // Reset the timer
                 }
                 break;
             
             case 1:
-                // Activate the buzzer (you may need to implement a function to generate tone)
-                // ...
+            	
+            	buttonvalue=buttonPin*8;
+
+                asm(
+			"or x30, x30, %0\n\t" 
+			:"=r"(buttonvalue));
                 if (!buttonPin) {
                     alarmState = 0;
-                    // Turn off the buzzer (you may need to implement a function to stop the tone)
-                    // ...
+                    buzzerPin=0;
+                    buzzervalue = buzzerPin*4;
+                    
+                    asm(
+                    	"or x30,x30,%0\n\t"
+                    	:"=r"(buzzervalue));
+                    
+                    
                 }
                 break;
         }
     }
 }
+
 ```
 
 # Converting C code into Assembly Language
