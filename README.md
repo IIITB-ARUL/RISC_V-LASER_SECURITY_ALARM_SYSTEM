@@ -9,6 +9,11 @@ This project can be implemented anywhere, not only buildings or premises but man
 # Circuit Diagram
 ![alarmsystem](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/ce64a096-e601-49e6-afb8-408ac385ec39)
 
+# Block Diagram
+
+![Slide1](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/61f43221-77c9-4820-983e-25adcf84f518)
+
+
 # Working Principle
 
 The project basically works on the principle of interruption. If by any means the LASER light is interrupted the alarm will start unless it is reset with push-button. The laser is a concentrated light source that puts out a straight beam of light of a single color
