@@ -467,7 +467,7 @@ Disassembly of section .text:
 # Unique Instructions
 
 
-
+```
 Number of different instructions: 35
 List of unique instructions:
 bne
@@ -505,4 +505,4 @@ jalr
 add
 sext.w
 sd
-
+```
