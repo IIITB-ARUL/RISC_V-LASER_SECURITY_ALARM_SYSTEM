@@ -202,4 +202,21 @@ add
 bnez
 li
 ```
- 
+
+
+
+## Acknowledgements
+- Kunal Ghosh, VSD Corp. Pvt. Ltd.
+- Skywater Foundry
+- Chatgpt
+- Emil Jayanth Lal,Colleague,IIIT B
+- Shant Rakshit,Colleague,IIIT B
+- Mayank Kabra,imtech
+
+ ## Reference 
+
+
+- https://github.com/The-OpenROAD-Project/OpenSTA.git
+- https://github.com/kunalg123
+- https://www.vsdiat.com
+- https://github.com/SakethGajawada/RISCV-GNU
