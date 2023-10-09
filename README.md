@@ -38,8 +38,7 @@ int buzzerPin_reg;
 
 
 
- // Define alarmState as a bit of P1
-
+ 
 int startTime = 0;
 int alarmState = 0;
 
@@ -60,7 +59,7 @@ void main()
                     asm volatile(
 			"or x30, x30, %0\n\t"
 			: 
-			:"r"(laserPin_reg)//right end
+			:"r"(laserPin_reg)
 			:"x30"
 			);
                
