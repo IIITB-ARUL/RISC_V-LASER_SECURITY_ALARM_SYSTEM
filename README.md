@@ -25,76 +25,88 @@ The LDR is sensitive to light and puts out a voltage when the laser light hits i
 
 ```
 
+
 int laserPin;
-int sensorPin;
+int laserPin_reg;
+int sensorPin=0;
+int sensorPin_reg;
 int buttonPin=1;
+int buttonPin_reg;
 int buzzerPin=0;
+int buzzerPin_reg;
 
-int laserThreshold=10;
 
- 
+
+
+ // Define alarmState as a bit of P1
 
 int startTime = 0;
-int sensorValue = 0;
-int laserPin_value = 0;
-int buttonvalue;
 int alarmState = 0;
-int buzzervalue;
 
-void main() {
+
+void main() 
+{
 
    
-    while (1) {
-        switch (alarmState) {
+    while (1) 
+    {
+        switch (alarmState) 
+        {
             case 0:
-                if (startTime == 0) {
-                    startTime = 1; // Start the 1-second timer
+                
                     laserPin = 1;
-                    laserPin_value = laserPin*2;
-                    asm(
-			"or x30, x30, %0\n\t" 
-			:"=r"(laserPin_value));
-                } else if (startTime < 1000) {
-                    // Increment the timer
-                    startTime++;
-                } else {
-                    sensorValue = sensorPin*16; // Read the sensor 
-                    asm(
-			"andi %0, x30, 1\n\t"
-			:"=r"(sensorValue));
-                    if (sensorValue > laserThreshold) {
+                    laserPin_reg=laserPin*4;
+                    
+                    asm volatile(
+			"or x30, x30, %0\n\t"
+			: 
+			:"r"(laserPin_reg)//right end
+			:"x30"
+			);
+               
+                    asm volatile(
+			"andi %0, x30, 0x01\n\t"
+			:"=r"(sensorPin)
+			:
+			);
+                    if (!sensorPin) 
+                    {
                         alarmState = 1;
                         buzzerPin=1;
-                        buzzervalue=buzzerPin*4;
-                         asm(
-				"or x30, x30, %0\n\t" 
-				:"=r"(buzzervalue));
+                        buzzerPin_reg=buzzerPin*8;
+                       asm volatile(
+                    	"or x30,x30,%0\n\t"
+                    	:
+                    	:"r"(buzzerPin_reg)
+                    	:"x30"
+                    	);
                     }
-                    laserPin = 0;
-                    laserPin_value = laserPin*2;
-                     asm(
-			"or x30, x30, %0\n\t" 
-			:"=r"(laserPin_value));
                     
-                    startTime = 0; // Reset the timer
-                }
+                            
+                
                 break;
             
             case 1:
             	
-            	buttonvalue=buttonPin*8;
+            	
 
-                asm(
-			"or x30, x30, %0\n\t" 
-			:"=r"(buttonvalue));
-                if (!buttonPin) {
+               asm volatile(
+			"andi %0, x30, 0x02\n\t"
+			: "=r" (buttonPin)
+			:
+			:);
+                if (!buttonPin) 
+                {
                     alarmState = 0;
                     buzzerPin=0;
-                    buzzervalue = buzzerPin*4;
+                    buzzerPin_reg = buzzerPin*8;
                     
-                    asm(
+                    asm volatile(
                     	"or x30,x30,%0\n\t"
-                    	:"=r"(buzzervalue));
+                    	:
+                    	:"r"(buzzerPin_reg)
+                    	:"x30"
+                    	);
                     
                     
                 }
@@ -102,7 +114,6 @@ void main() {
         }
     }
 }
-
 ```
 
 
