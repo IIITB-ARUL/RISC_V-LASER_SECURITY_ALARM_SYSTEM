@@ -11,7 +11,7 @@ This project can be implemented anywhere, not only buildings or premises but man
 
 # Block Diagram
 
-![Slide1](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/61f43221-77c9-4820-983e-25adcf84f518)
+![Slide2](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/d22ac893-b6ab-48b0-aba6-9a505f05f88d)
 
 
 # Working Principle
