@@ -29,17 +29,14 @@ The LDR is sensitive to light and puts out a voltage when the laser light hits i
 int laserPin;
 int laserPin_reg;
 int sensorPin=0;
-int sensorPin_reg;
 int buttonPin=1;
-int buttonPin_reg;
 int buzzerPin=0;
 int buzzerPin_reg;
 
 
 
 
- 
-int startTime = 0;
+
 int alarmState = 0;
 
 
@@ -59,7 +56,7 @@ void main()
                     asm volatile(
 			"or x30, x30, %0\n\t"
 			: 
-			:"r"(laserPin_reg)
+			:"r"(laserPin_reg)//right end
 			:"x30"
 			);
                
@@ -133,7 +130,7 @@ Disassembly of section .text:
    10094:	ff010113          	add	sp,sp,-16
    10098:	00812623          	sw	s0,12(sp)
    1009c:	01010413          	add	s0,sp,16
-   100a0:	8241a783          	lw	a5,-2012(gp) # 1117c <alarmState>
+   100a0:	8181a783          	lw	a5,-2024(gp) # 11170 <alarmState>
    100a4:	00078863          	beqz	a5,100b4 <main+0x20>
    100a8:	00100713          	li	a4,1
    100ac:	06e78263          	beq	a5,a4,10110 <main+0x7c>
@@ -152,13 +149,13 @@ Disassembly of section .text:
    100e0:	80c1a783          	lw	a5,-2036(gp) # 11164 <sensorPin>
    100e4:	06079263          	bnez	a5,10148 <main+0xb4>
    100e8:	00100713          	li	a4,1
-   100ec:	82e1a223          	sw	a4,-2012(gp) # 1117c <alarmState>
+   100ec:	80e1ac23          	sw	a4,-2024(gp) # 11170 <alarmState>
    100f0:	00100713          	li	a4,1
-   100f4:	80e1ac23          	sw	a4,-2024(gp) # 11170 <buzzerPin>
-   100f8:	8181a783          	lw	a5,-2024(gp) # 11170 <buzzerPin>
+   100f4:	80e1a823          	sw	a4,-2032(gp) # 11168 <buzzerPin>
+   100f8:	8101a783          	lw	a5,-2032(gp) # 11168 <buzzerPin>
    100fc:	00379713          	sll	a4,a5,0x3
-   10100:	80e1ae23          	sw	a4,-2020(gp) # 11174 <buzzerPin_reg>
-   10104:	81c1a783          	lw	a5,-2020(gp) # 11174 <buzzerPin_reg>
+   10100:	80e1aa23          	sw	a4,-2028(gp) # 1116c <buzzerPin_reg>
+   10104:	8141a783          	lw	a5,-2028(gp) # 1116c <buzzerPin_reg>
    10108:	00ff6f33          	or	t5,t5,a5
    1010c:	03c0006f          	j	10148 <main+0xb4>
    10110:	002f7713          	and	a4,t5,2
@@ -167,19 +164,18 @@ Disassembly of section .text:
    1011c:	000117b7          	lui	a5,0x11
    10120:	1587a783          	lw	a5,344(a5) # 11158 <buttonPin>
    10124:	02079663          	bnez	a5,10150 <main+0xbc>
-   10128:	8201a223          	sw	zero,-2012(gp) # 1117c <alarmState>
-   1012c:	8001ac23          	sw	zero,-2024(gp) # 11170 <buzzerPin>
-   10130:	8181a783          	lw	a5,-2024(gp) # 11170 <buzzerPin>
+   10128:	8001ac23          	sw	zero,-2024(gp) # 11170 <alarmState>
+   1012c:	8001a823          	sw	zero,-2032(gp) # 11168 <buzzerPin>
+   10130:	8101a783          	lw	a5,-2032(gp) # 11168 <buzzerPin>
    10134:	00379713          	sll	a4,a5,0x3
-   10138:	80e1ae23          	sw	a4,-2020(gp) # 11174 <buzzerPin_reg>
-   1013c:	81c1a783          	lw	a5,-2020(gp) # 11174 <buzzerPin_reg>
+   10138:	80e1aa23          	sw	a4,-2028(gp) # 1116c <buzzerPin_reg>
+   1013c:	8141a783          	lw	a5,-2028(gp) # 1116c <buzzerPin_reg>
    10140:	00ff6f33          	or	t5,t5,a5
    10144:	00c0006f          	j	10150 <main+0xbc>
    10148:	00000013          	nop
    1014c:	f55ff06f          	j	100a0 <main+0xc>
    10150:	00000013          	nop
    10154:	f4dff06f          	j	100a0 <main+0xc>
-
 ```
 
 
@@ -188,19 +184,20 @@ Disassembly of section .text:
 ```
 Number of different instructions: 13
 List of unique instructions:
-and
-nop
-beq
-lui
-j
-or
 lw
-sw
+j
+beq
+nop
 beqz
-sll
 add
+sll
+and
 bnez
+or
+sw
+lui
 li
+
 ```
 
 
