@@ -24,24 +24,17 @@ The LDR is sensitive to light and puts out a voltage when the laser light hits i
 # C Code 
 
 ```
-
-
-int laserPin;
-int laserPin_reg;
-int sensorPin=0;
-int buttonPin=1;
-int buzzerPin=0;
-int buzzerPin_reg;
-
-
-
-
-
-int alarmState = 0;
-
-
-void main() 
+int main() 
 {
+
+	
+ int laserPin;
+ int laserPin_reg;
+ int sensorPin=0;
+ int buttonPin=1;
+ int buzzerPin=0;
+ int buzzerPin_reg;
+ int alarmState = 0;
 
    
     while (1) 
@@ -120,83 +113,84 @@ void main()
 # Assembly Code
 
 ```
-
 out:     file format elf32-littleriscv
 
 
 Disassembly of section .text:
 
-00010094 <main>:
-   10094:	ff010113          	add	sp,sp,-16
-   10098:	00812623          	sw	s0,12(sp)
-   1009c:	01010413          	add	s0,sp,16
-   100a0:	8181a783          	lw	a5,-2024(gp) # 11170 <alarmState>
-   100a4:	00078863          	beqz	a5,100b4 <main+0x20>
-   100a8:	00100713          	li	a4,1
-   100ac:	06e78263          	beq	a5,a4,10110 <main+0x7c>
-   100b0:	ff1ff06f          	j	100a0 <main+0xc>
-   100b4:	000117b7          	lui	a5,0x11
-   100b8:	00100713          	li	a4,1
-   100bc:	14e7ae23          	sw	a4,348(a5) # 1115c <laserPin>
-   100c0:	000117b7          	lui	a5,0x11
-   100c4:	15c7a783          	lw	a5,348(a5) # 1115c <laserPin>
-   100c8:	00279713          	sll	a4,a5,0x2
-   100cc:	80e1a423          	sw	a4,-2040(gp) # 11160 <laserPin_reg>
-   100d0:	8081a783          	lw	a5,-2040(gp) # 11160 <laserPin_reg>
-   100d4:	00ff6f33          	or	t5,t5,a5
-   100d8:	001f7713          	and	a4,t5,1
-   100dc:	80e1a623          	sw	a4,-2036(gp) # 11164 <sensorPin>
-   100e0:	80c1a783          	lw	a5,-2036(gp) # 11164 <sensorPin>
-   100e4:	06079263          	bnez	a5,10148 <main+0xb4>
-   100e8:	00100713          	li	a4,1
-   100ec:	80e1ac23          	sw	a4,-2024(gp) # 11170 <alarmState>
-   100f0:	00100713          	li	a4,1
-   100f4:	80e1a823          	sw	a4,-2032(gp) # 11168 <buzzerPin>
-   100f8:	8101a783          	lw	a5,-2032(gp) # 11168 <buzzerPin>
-   100fc:	00379713          	sll	a4,a5,0x3
-   10100:	80e1aa23          	sw	a4,-2028(gp) # 1116c <buzzerPin_reg>
-   10104:	8141a783          	lw	a5,-2028(gp) # 1116c <buzzerPin_reg>
-   10108:	00ff6f33          	or	t5,t5,a5
-   1010c:	03c0006f          	j	10148 <main+0xb4>
-   10110:	002f7713          	and	a4,t5,2
-   10114:	000117b7          	lui	a5,0x11
-   10118:	14e7ac23          	sw	a4,344(a5) # 11158 <buttonPin>
-   1011c:	000117b7          	lui	a5,0x11
-   10120:	1587a783          	lw	a5,344(a5) # 11158 <buttonPin>
-   10124:	02079663          	bnez	a5,10150 <main+0xbc>
-   10128:	8001ac23          	sw	zero,-2024(gp) # 11170 <alarmState>
-   1012c:	8001a823          	sw	zero,-2032(gp) # 11168 <buzzerPin>
-   10130:	8101a783          	lw	a5,-2032(gp) # 11168 <buzzerPin>
-   10134:	00379713          	sll	a4,a5,0x3
-   10138:	80e1aa23          	sw	a4,-2028(gp) # 1116c <buzzerPin_reg>
-   1013c:	8141a783          	lw	a5,-2028(gp) # 1116c <buzzerPin_reg>
-   10140:	00ff6f33          	or	t5,t5,a5
-   10144:	00c0006f          	j	10150 <main+0xbc>
-   10148:	00000013          	nop
-   1014c:	f55ff06f          	j	100a0 <main+0xc>
-   10150:	00000013          	nop
-   10154:	f4dff06f          	j	100a0 <main+0xc>
+00010074 <main>:
+   10074:	fd010113          	add	sp,sp,-48
+   10078:	02812623          	sw	s0,44(sp)
+   1007c:	03010413          	add	s0,sp,48
+   10080:	fe042423          	sw	zero,-24(s0)
+   10084:	00100793          	li	a5,1
+   10088:	fef42223          	sw	a5,-28(s0)
+   1008c:	fe042023          	sw	zero,-32(s0)
+   10090:	fe042623          	sw	zero,-20(s0)
+   10094:	fec42783          	lw	a5,-20(s0)
+   10098:	00078a63          	beqz	a5,100ac <main+0x38>
+   1009c:	fec42703          	lw	a4,-20(s0)
+   100a0:	00100793          	li	a5,1
+   100a4:	04f70e63          	beq	a4,a5,10100 <main+0x8c>
+   100a8:	fedff06f          	j	10094 <main+0x20>
+   100ac:	00100793          	li	a5,1
+   100b0:	fcf42c23          	sw	a5,-40(s0)
+   100b4:	fd842783          	lw	a5,-40(s0)
+   100b8:	00279793          	sll	a5,a5,0x2
+   100bc:	fcf42a23          	sw	a5,-44(s0)
+   100c0:	fd442783          	lw	a5,-44(s0)
+   100c4:	00ff6f33          	or	t5,t5,a5
+   100c8:	001f7793          	and	a5,t5,1
+   100cc:	fef42423          	sw	a5,-24(s0)
+   100d0:	fe842783          	lw	a5,-24(s0)
+   100d4:	04079e63          	bnez	a5,10130 <main+0xbc>
+   100d8:	00100793          	li	a5,1
+   100dc:	fef42623          	sw	a5,-20(s0)
+   100e0:	00100793          	li	a5,1
+   100e4:	fef42023          	sw	a5,-32(s0)
+   100e8:	fe042783          	lw	a5,-32(s0)
+   100ec:	00379793          	sll	a5,a5,0x3
+   100f0:	fcf42e23          	sw	a5,-36(s0)
+   100f4:	fdc42783          	lw	a5,-36(s0)
+   100f8:	00ff6f33          	or	t5,t5,a5
+   100fc:	0340006f          	j	10130 <main+0xbc>
+   10100:	002f7793          	and	a5,t5,2
+   10104:	fef42223          	sw	a5,-28(s0)
+   10108:	fe442783          	lw	a5,-28(s0)
+   1010c:	02079663          	bnez	a5,10138 <main+0xc4>
+   10110:	fe042623          	sw	zero,-20(s0)
+   10114:	fe042023          	sw	zero,-32(s0)
+   10118:	fe042783          	lw	a5,-32(s0)
+   1011c:	00379793          	sll	a5,a5,0x3
+   10120:	fcf42e23          	sw	a5,-36(s0)
+   10124:	fdc42783          	lw	a5,-36(s0)
+   10128:	00ff6f33          	or	t5,t5,a5
+   1012c:	00c0006f          	j	10138 <main+0xc4>
+   10130:	00000013          	nop
+   10134:	f61ff06f          	j	10094 <main+0x20>
+   10138:	00000013          	nop
+   1013c:	f59ff06f          	j	10094 <main+0x20>
 ```
 
 
 # Unique Instructions
 
 ```
-Number of different instructions: 13
+Number of different instructions: 12
 List of unique instructions:
-lw
-j
 beq
-nop
-beqz
-add
-sll
-and
-bnez
 or
-sw
-lui
+nop
 li
+j
+and
+sll
+add
+bnez
+lw
+sw
+beqz
+
 
 ```
 
