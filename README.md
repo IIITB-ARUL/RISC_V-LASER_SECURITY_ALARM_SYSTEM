@@ -179,18 +179,18 @@ Disassembly of section .text:
 ```
 Number of different instructions: 12
 List of unique instructions:
+lw
+j
+slli
+beqz
+sw
+nop
+bnez
+addi
+andi
+li
 beq
 or
-nop
-li
-j
-and
-sll
-add
-bnez
-lw
-sw
-beqz
 
 
 ```
