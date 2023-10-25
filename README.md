@@ -185,6 +185,14 @@ Now the sensor is set to one (sensorPin=1) no object is detected the buzzer rema
 
 # Assembly Code
 
+
+code conversion:
+
+```
+riscv64-unknown-elf -march=rv32i -mabi=ilp32 -ffreestanding -nostdlib -o out alar1.c
+riscv64-unknown-elf-objdump -d -r out > asm.txt
+```
+
 ```
 
 out:     file format elf32-littleriscv
