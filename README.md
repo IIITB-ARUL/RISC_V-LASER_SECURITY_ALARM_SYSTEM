@@ -171,7 +171,7 @@ Here the alarmstate is initially set to zero and the laser is always turned on.N
 ![spike1](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/57848571-2f8f-4985-a2ae-e0767a664eef)
 
 
-Now the sensor is set to one (sensorPin=1) no object is detected the buzzer remains off.
+Now the sensor is set to one (sensorPin=1) no object is detected the buzzer remains off.Here it does not check for the button pin.
 
 ![spike2](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/e13a09d4-6f6b-4328-b32a-a711cabe468d)
 
