@@ -149,6 +149,10 @@ int main()
 
 # Spike Results
 
+```
+riscv64-unknown-elf-gcc -march=rv64i -mabi=lp64 -ffreestanding -o out test2.c 
+spike pk out
+```
 Here the alarmstate is initially set to zero and the laser is always turned on.Now the sensor is set to zero(sensorPin=0) whic denotes some object is detected.Now the alarmstate is set to 1and the buzzer is turned on.Then it checks for the buttonPin.here the buttonPin is 1 which makes the buzzer go off and the alarmstate is set to zero(alarmstate=0).
 
 ![spike1](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/57848571-2f8f-4985-a2ae-e0767a664eef)
