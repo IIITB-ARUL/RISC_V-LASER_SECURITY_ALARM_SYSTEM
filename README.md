@@ -150,6 +150,16 @@ int main()
 # Spike Results
 
 ```
+x30[3:0] --> GPIO pins 
+x30[0] --> sensor pin (detects the object[0 or1])
+x30[1] --> button pin (turns the buzzer on or off)
+x30[2] --> laser pin (always on)
+x30[3] --> buzzer pin (goes on when sensorpin = 0 / goes off when sensorpin = 1)
+```
+
+
+
+```
 riscv64-unknown-elf-gcc -march=rv64i -mabi=lp64 -ffreestanding -o out test2.c 
 spike pk out
 ```
