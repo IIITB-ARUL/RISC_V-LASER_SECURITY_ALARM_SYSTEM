@@ -156,8 +156,11 @@ x30[1] --> button pin (turns the buzzer on or off)
 x30[2] --> laser pin (always on)
 x30[3] --> buzzer pin (goes on when sensorpin = 0 / goes off when sensorpin = 1)
 ```
+Possible output combination:
 
-
+```
+x30[3:2] --> 01 -->masked output -->0100
+x30[3:2] --> 11 -->masked output -->1100
 
 ```
 riscv64-unknown-elf-gcc -march=rv64i -mabi=lp64 -ffreestanding -o out test2.c 
