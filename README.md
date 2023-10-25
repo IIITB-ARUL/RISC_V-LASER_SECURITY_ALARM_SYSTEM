@@ -246,20 +246,22 @@ Disassembly of section .text:
 # Unique Instructions
 
 ```
-Number of different instructions: 12
+Number of different instructions: 13
 List of unique instructions:
 lw
-j
 slli
-beqz
-sw
-nop
-bnez
-addi
+j
 andi
-li
-beq
+beqz
+nop
+and
+sw
 or
+addi
+beq
+bnez
+li
+
 
 
 ```
