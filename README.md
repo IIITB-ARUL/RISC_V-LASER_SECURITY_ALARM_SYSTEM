@@ -157,11 +157,11 @@ x30[2] --> laser pin (always on)
 x30[3] --> buzzer pin (goes on when sensorpin = 0 / goes off when sensorpin = 1)
 ```
 
-Possible output combination:
+
 
 ```
-x30[3:2] --> 01 -->masked output -->0100
-x30[3:2] --> 11 -->masked output -->1100
+input x30[1:0] -->01  output x30[3:2] --> 01 -->masked output -->0100
+input x30[1:0] -->00  output x30[3:2] --> 11 -->masked output -->1100
 ```
 
 ```
