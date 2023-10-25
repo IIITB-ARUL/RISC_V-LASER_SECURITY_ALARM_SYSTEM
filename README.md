@@ -156,16 +156,19 @@ x30[1] --> button pin (turns the buzzer on or off)
 x30[2] --> laser pin (always on)
 x30[3] --> buzzer pin (goes on when sensorpin = 0 / goes off when sensorpin = 1)
 ```
+
 Possible output combination:
 
 ```
 x30[3:2] --> 01 -->masked output -->0100
 x30[3:2] --> 11 -->masked output -->1100
+```
 
 ```
 riscv64-unknown-elf-gcc -march=rv64i -mabi=lp64 -ffreestanding -o out test2.c 
 spike pk out
 ```
+
 Here the alarmstate is initially set to zero and the laser is always turned on.Now the sensor is set to zero(sensorPin=0) which denotes some object is detected.Now the alarmstate is set to 1and the buzzer is turned on.Then it checks for the buttonPin.here the buttonPin is 1 which makes the buzzer go off and the alarmstate is set to zero(alarmstate=0).
 
 ![spike1](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/57848571-2f8f-4985-a2ae-e0767a664eef)
@@ -183,7 +186,6 @@ Now the sensor is set to one (sensorPin=1) no object is detected the buzzer rema
 # Assembly Code
 
 ```
-
 
 out:     file format elf32-littleriscv
 
@@ -270,6 +272,7 @@ Disassembly of section .text:
    10184:	00000013          	nop
    10188:	ef9ff06f          	j	10080 <main+0x2c>
 ```
+
 
 
 # Unique Instructions
