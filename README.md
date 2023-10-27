@@ -160,7 +160,7 @@ x30[3] --> buzzer pin (goes on when sensorpin = 0 / goes off when sensorpin = 1)
 
 
 ```
-input x30[1:0] -->01  output x30[3:2] --> 10 -->masked output -->1000
+input x30[1:0] -->01  output x30[3:2] --> 01 -->masked output -->1000
 input x30[1:0] -->00  output x30[3:2] --> 11 -->masked output -->1100
 input x30[1:0] -->10  output x30[3:2] --> 11 -->masked output -->1100
 ```
