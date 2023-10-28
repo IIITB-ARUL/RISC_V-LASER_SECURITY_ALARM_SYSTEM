@@ -339,6 +339,13 @@ Now the case is ```input_wires-->11```.Since the sensorPin and buttonPin is high
 ![Fvcase3](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/fbef93dc-675d-4d54-9801-230655bb15f5)
 
 
+# Instruction Verification
+
+Here the instruction in the assembly code is tested and verified by using gtkwave. 
+
+The first instruction is ``` 10054:	fc010113          	addi	sp,sp,-64``` .Previously sp was ```000000FF``` after subtracting by 64 sp is```0000000BF```
+
+
 
 
 
