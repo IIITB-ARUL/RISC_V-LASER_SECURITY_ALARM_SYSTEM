@@ -309,6 +309,21 @@ li
 
 
 
+
+# Functional Verification on using GTKWave Simulation
+Here we  will verify all the outputs with waveform for all the possible input combinations.
+```
+x30[0] --> sensor pin 
+x30[1] --> button pin 
+x30[2] --> laser pin 
+x30[3] --> buzzer pin
+```
+
+In the below image you can see the input_wires[1:0]={buttonPin,sensorPin} and output_wires[1:0]={buzzerPin,laserPin(always high)}.
+
+In the first case the ```input_wires-->00``` As explained earlier buzzer goes on when sensorPin is low, ```output_wires-->11``` .Now only buzzer goes off when button pin goes high.You can clearly see that ```input_wires-->01``` Eventhough sensorPin is high buzzer is still on.
+
+
 ## Acknowledgements
 - Kunal Ghosh, VSD Corp. Pvt. Ltd.
 - Chatgpt
