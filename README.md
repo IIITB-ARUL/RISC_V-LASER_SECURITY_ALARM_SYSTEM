@@ -330,6 +330,11 @@ Now in the next case ```input_wires-->10``` .Here the sensorPin is low first and
 
 
 
+![FVcase2](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/fd708af4-32aa-48e0-8bfc-a65c8be1fb0f)
+
+
+
+
 
 ## Acknowledgements
 - Kunal Ghosh, VSD Corp. Pvt. Ltd.
