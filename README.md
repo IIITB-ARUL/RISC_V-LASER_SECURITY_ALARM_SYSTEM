@@ -345,6 +345,9 @@ Here the instruction in the assembly code is tested and verified by using gtkwav
 
 The first instruction is ``` 10054:	fc010113          	addi	sp,sp,-64``` .Previously sp was ```000000FF``` after subtracting by 64 sp is```0000000BF```
 
+![ins_ver](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/56d81b4a-9ca5-4419-977f-4b5517430d4c)
+
+
 
 
 
