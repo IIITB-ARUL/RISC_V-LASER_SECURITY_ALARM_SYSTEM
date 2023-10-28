@@ -347,7 +347,10 @@ The first instruction is ``` 10054:	fc010113          	addi	sp,sp,-64``` .Previo
 
 ![ins_ver](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/56d81b4a-9ca5-4419-977f-4b5517430d4c)
 
-Thw next instruction with immediate value operation is ```   10060:	00100793          	li	a5,1``` Here the register a5(Signal58) is loaded with 1.
+The next instruction with immediate value operation is ```   10060:	00100793          	li	a5,1``` Here the register a5(Signal58) is loaded with 1.
+
+![ins_ver2](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/5149112f-5c91-47bd-bee3-dab514e6284f)
+
 
 
 
