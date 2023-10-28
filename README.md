@@ -323,6 +323,10 @@ In the below image you can see the input_wires[1:0]={buttonPin,sensorPin} and ou
 
 In the first case the ```input_wires-->00``` As explained earlier buzzer goes on when sensorPin is low, ```output_wires-->11``` .Now only buzzer goes off when button pin goes high.You can clearly see that ```input_wires-->01``` Eventhough sensorPin is high buzzer is still on.
 
+![FVcase1](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/d736237c-501e-488f-8e01-f74c41348083)
+
+
+
 
 ## Acknowledgements
 - Kunal Ghosh, VSD Corp. Pvt. Ltd.
