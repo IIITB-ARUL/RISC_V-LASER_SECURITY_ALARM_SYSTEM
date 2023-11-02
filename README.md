@@ -349,7 +349,18 @@ The first instruction is ``` 10054:	fc010113          	addi	sp,sp,-64``` .Previo
 
 The next instruction with immediate value operation is ```   10060:	00100793          	li	a5,1``` Here the register a5(Signal58) is loaded with 1.
 
-![ins_ver2](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/5149112f-5c91-47bd-bee3-dab514e6284f)
+![ins_ver2](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/5149112f-5c91-47bd-bee3-dab514e6284f
+
+
+
+
+
+
+
+# Gate Level Synthesis
+
+It is the process of converting the high-level description into an RTL representation that defines the functional blocks, interconnections, and register transfers within the design. This representation is often in the form of a hardware netlist, which is a list of interconnected logic elements. During synthesis, various optimization techniques are applied to improve the design's performance, power efficiency, and area utilization.
+The conversion of RTL in terms of the standard cells gates available in the .lib.
 
 
 
