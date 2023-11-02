@@ -380,9 +380,19 @@ iverilog -o test synth_processor_test.v testbench.v sky130_sram_1kbyte_1rw1r_32x
 
 ```
 
+## Case1
 
 
+![Screenshot from 2023-11-02 17-40-56](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/b5afa5a2-ebe3-4299-af07-743e2a4fd48e)
 
+## Case2 
+![Screenshot from 2023-11-02 17-40-11](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/36f01394-1544-407f-83c0-88c0095b61bf)
+
+## Case3
+![Screenshot from 2023-11-02 17-39-04](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/d8fbf72b-3401-45a5-a97b-f3aeccdf504a)
+
+## Case4
+![Screenshot from 2023-11-02 17-38-06](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/4f95f60f-e97d-4609-a1aa-f8c8ab7f8fd3)
 
 
 
