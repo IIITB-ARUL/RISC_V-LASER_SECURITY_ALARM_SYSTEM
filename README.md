@@ -477,6 +477,8 @@ Synthesis Report
 
 ### Clock tree synthesis
 
+![run_cts](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/375ba924-343b-44e4-ba13-004097520f97)
+
 
 ### Timing report
 
