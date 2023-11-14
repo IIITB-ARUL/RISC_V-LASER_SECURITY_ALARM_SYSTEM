@@ -437,22 +437,44 @@ make mount
 
 ```
 
+
+![flow1](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/d5d6dc57-cec2-491f-9d5c-16699e7688e9)
+![run_magic](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/d0c48289-db0e-44d5-bad5-586f307a3955)
+
+
 ### Synthesis
+
+
+![RS](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/c1ded1cc-b68f-466d-bdbf-f8f05ce7942d)
+
 
 
 Synthesis Report
 
+![synt_stat](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/906e1793-6a39-42d7-a26a-cd19490c0701)
+
 
 ### Floorplan
+
+![FP](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/d1e847a0-b312-48ab-a56c-3ab10e1bd7df)
 
 
 ### Die Area(post floorplan)
 
+![FP_die_area](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/2b061f33-9031-4f5b-bd5c-9aa1255749bb)
+
+
 
 ### Core Area(post floorplan)
 
+![FP_core_area](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/ce4d69df-9369-428e-a844-6a51505954cd)
+
+
 
 ### Placement 
+
+![run_placement](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/4c4c9093-eefc-4a1a-a77d-cf69b19faaae)
+
 
 ### Clock tree synthesis
 
@@ -467,6 +489,10 @@ Synthesis Report
 
 
 ### Routing
+
+
+![run_routing](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/525e177f-653a-4801-b836-22f37661f17b)
+
 
 ### Post routing Timing Report
 ### Post routing Area Report
