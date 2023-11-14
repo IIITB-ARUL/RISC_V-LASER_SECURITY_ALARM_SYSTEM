@@ -440,6 +440,42 @@ make mount
 ### Synthesis
 
 
+Synthesis Report
+
+
+### Floorplan
+
+
+### Die Area(post floorplan)
+
+
+### Core Area(post floorplan)
+
+
+### Placement 
+
+### Clock tree synthesis
+
+
+### Timing report
+
+### Area report 
+
+### Skew report 
+
+### Power report
+
+
+### Routing
+
+### Post routing Timing Report
+### Post routing Area Report
+### Post routing Power Report
+### Design Rule Check(DRC)
+
+
+### Additional steps
+
 
 
 ## Acknowledgements
