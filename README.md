@@ -460,13 +460,13 @@ Synthesis Report
 
 ### Die Area(post floorplan)
 
-![FP_die_area](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/2b061f33-9031-4f5b-bd5c-9aa1255749bb)
+![FP_die_area](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/3464da03-6f88-4d24-93cd-21b04ee34ec4)
 
 
 
 ### Core Area(post floorplan)
 
-![FP_core_area](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/ce4d69df-9369-428e-a844-6a51505954cd)
+![FP_core_area](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/b6d95930-9c70-49a0-aa6d-0bcb40435508)
 
 
 
