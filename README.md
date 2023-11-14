@@ -439,7 +439,6 @@ make mount
 
 
 ![flow1](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/d5d6dc57-cec2-491f-9d5c-16699e7688e9)
-![run_magic](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/d0c48289-db0e-44d5-bad5-586f307a3955)
 
 
 ### Synthesis
