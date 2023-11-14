@@ -395,11 +395,57 @@ iverilog -o test synth_processor_test.v testbench.v sky130_sram_1kbyte_1rw1r_32x
 ![Screenshot from 2023-11-02 17-38-06](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/4f95f60f-e97d-4609-a1aa-f8c8ab7f8fd3)
 
 
+# PNR flow
+
+The PNR (Place and Route) flow is a crucial aspect of ASIC (Application-Specific Integrated Circuit) design, encompassing a series of stages that involve placing the electronic components on the chip and establishing the interconnections between them. In the context of Openlane, this flow integrates various open-source tools to facilitate the efficient execution of each step in the Place and Route process.
+
+### Synthesis:
+Generation of gate-level netlist: Yosys is employed to produce the gate-level netlist.
+Cell mapping: ABC is utilized for the mapping of cells.
+Pre-layout Static Timing Analysis (STA): OpenSTA is applied for pre-layout static timing analysis.
+
+### Floorplanning:
+Definition of core area, cell sites, and tracks: Init_fp is responsible for establishing the core area for the macro, cell sites, and tracks.
+Placement of macro ports: Ioplacer is used to position the input and output ports of the macro.
+Power distribution network generation: Pdn is tasked with generating the power distribution network.
+
+### Placement:
+Global placement: RePLace is implemented for the initial global placement.
+Detailed placement: OpenDP is enlisted for detailed placement to regularize the globally placed components.
+
+### Clock Tree Synthesis (CTS):
+Clock tree synthesis: TritonCTS is employed for synthesizing the clock tree.
+
+### Routing:
+Global routing: FastRoute is utilized for global routing, generating a guide file for the detailed router.
+Detailed routing: TritonRoute is applied for the intricate process of detailed routing.
+
+### GDSII Generation:
+Creation of the final GDSII layout file: Magic is used to stream out the conclusive GDSII layout file from the routed DEF file.
+
+# Design Flow
+Preparing the design and including the lef files: The commands to prepare the design and overwite in a existing run folder the reports and results along with the command to include the lef files is given below:
+ 
+``` sed -i's/max_transition   :0.04/max_transition   :0.75'*/*.lib ```
+
+
+```
+make mount
+%./flow.tcl -interactive
+% package require openlane 0.9
+% prep -design project 
+
+```
+
+### Synthesis
+
+
 
 
 ## Acknowledgements
 - Kunal Ghosh, VSD Corp. Pvt. Ltd.
 - Chatgpt
+- Alwin Shaju,Colleague,IIIT B
 - Emil Jayanth Lal,Colleague,IIIT B
 - Shant Rakshit,Colleague,IIIT B
 - Mayank Kabra,imtech
