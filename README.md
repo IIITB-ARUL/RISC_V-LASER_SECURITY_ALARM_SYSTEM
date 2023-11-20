@@ -458,6 +458,11 @@ Synthesis Report
 ![FP](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/d1e847a0-b312-48ab-a56c-3ab10e1bd7df)
 
 
+To view the floorplan: Magic is invoked after moving to the results/floorplan directory
+
+
+
+
 ### Die Area(post floorplan)
 
 ![FP_die_area](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/3464da03-6f88-4d24-93cd-21b04ee34ec4)
