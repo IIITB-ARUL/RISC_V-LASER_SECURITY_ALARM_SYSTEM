@@ -492,13 +492,8 @@ To view the floorplan: Magic is invoked after moving to the results/floorplan di
 ![run_cts](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/375ba924-343b-44e4-ba13-004097520f97)
 
 
-### Timing report
 
-### Area report 
 
-### Skew report 
-
-### Power report
 
 
 ### Routing
@@ -514,6 +509,12 @@ To view the floorplan: Magic is invoked after moving to the results/floorplan di
 ![Area_design](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/0a9d153f-d00e-4217-9172-18e7eba23d79)
 
 
+
+### Timing report
+
+### Area report 
+
+### Power report
 
 
 ### Design Rule Check(DRC)
