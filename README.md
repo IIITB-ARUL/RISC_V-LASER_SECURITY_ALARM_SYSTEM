@@ -516,15 +516,15 @@ To view the floorplan: Magic is invoked after moving to the results/floorplan di
 
 
 
-### Post routing Timing Report
-### Post routing Area Report
-### Post routing Power Report
 ### Design Rule Check(DRC)
 
 ![Screenshot from 2023-11-14 23-16-29](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/29a3a500-0538-41fa-ac07-00db0f31a0d2)
 
 
 ### Additional steps
+
+![Screenshot from 2023-11-13 12-08-49](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/442f6208-3e38-4f22-b74e-88e2461882fa)
+
 
 
 
