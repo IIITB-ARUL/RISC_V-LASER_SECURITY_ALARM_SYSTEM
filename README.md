@@ -509,6 +509,11 @@ To view the floorplan: Magic is invoked after moving to the results/floorplan di
 
 ![routing](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/32530b36-f9b9-44f6-9e88-f3dcdf01518a)
 
+### Area of design
+
+![Area_design](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/0a9d153f-d00e-4217-9172-18e7eba23d79)
+
+
 
 
 ### Post routing Timing Report
