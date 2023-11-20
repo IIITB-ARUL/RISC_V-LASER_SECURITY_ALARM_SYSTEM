@@ -460,6 +460,9 @@ Synthesis Report
 
 To view the floorplan: Magic is invoked after moving to the results/floorplan directory
 
+![floorplan](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/13ca28f1-800a-4c07-bd6b-38b415e1aede)
+
+
 
 
 
@@ -480,6 +483,10 @@ To view the floorplan: Magic is invoked after moving to the results/floorplan di
 ![run_placement](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/4c4c9093-eefc-4a1a-a77d-cf69b19faaae)
 
 
+![placement](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/ea722630-d663-4e97-b81e-8aa9f9885a27)
+
+
+
 ### Clock tree synthesis
 
 ![run_cts](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/375ba924-343b-44e4-ba13-004097520f97)
@@ -498,6 +505,10 @@ To view the floorplan: Magic is invoked after moving to the results/floorplan di
 
 
 ![run_routing](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/525e177f-653a-4801-b836-22f37661f17b)
+
+
+![routing](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/32530b36-f9b9-44f6-9e88-f3dcdf01518a)
+
 
 
 ### Post routing Timing Report
