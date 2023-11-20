@@ -6128,7 +6128,7 @@ endmodule
 
 
 
-    module sky130_sram_2kbyte_1rw1r_32x256_8_inst(
+   /* module sky130_sram_2kbyte_1rw1r_32x256_8_inst(
     `ifdef USE_POWER_PINS
         vccd1,
         vssd1,
