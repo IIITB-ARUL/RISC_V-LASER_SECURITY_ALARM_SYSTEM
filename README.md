@@ -537,11 +537,11 @@ To view the floorplan: Magic is invoked after moving to the results/floorplan di
 
 ## Acknowledgements
 - Kunal Ghosh, VSD Corp. Pvt. Ltd.
-- Chatgpt
+- Mayank Kabra,Founder, Chipcron Pvt. Ltd.
 - Alwin Shaju,Colleague,IIIT B
 - Emil Jayanth Lal,Colleague,IIIT B
 - Shant Rakshit,Colleague,IIIT B
-- Mayank Kabra,imtech
+ 
 
  ## Reference 
 - https://github.com/SakethGajawada/RISCV-GNU
