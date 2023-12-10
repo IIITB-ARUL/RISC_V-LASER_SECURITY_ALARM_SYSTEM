@@ -465,6 +465,10 @@ Synthesis Report
 
 To view the floorplan: Magic is invoked after moving to the results/floorplan directory
 
+```
+magic -T /home/emil/.volare/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read wrapper.def &
+```
+
 ![floorplan](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/13ca28f1-800a-4c07-bd6b-38b415e1aede)
 
 
