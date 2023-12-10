@@ -401,6 +401,9 @@ iverilog -o test synth_processor_test.v testbench.v sky130_sram_1kbyte_1rw1r_32x
 
 The PNR (Place and Route) flow is a crucial aspect of ASIC (Application-Specific Integrated Circuit) design, encompassing a series of stages that involve placing the electronic components on the chip and establishing the interconnections between them. In the context of Openlane, this flow integrates various open-source tools to facilitate the efficient execution of each step in the Place and Route process.
 
+![pnr](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/89998359-1b41-4cda-a13a-8f663d7167f7)
+
+
 ### Synthesis:
 Generation of gate-level netlist: Yosys is employed to produce the gate-level netlist.
 Cell mapping: ABC is utilized for the mapping of cells.
@@ -528,9 +531,14 @@ To view the floorplan: Magic is invoked after moving to the results/floorplan di
 ### Design Rule Check(DRC)
 
 ![Screenshot from 2023-11-14 23-16-29](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/29a3a500-0538-41fa-ac07-00db0f31a0d2)
+```
+				1
+Operating Frequency =  ------------------------  =0.037735Ghz
+                     clock period - slack(setup)
+```
+### Signoff
 
-
-### Additional steps
+Additional steps
 
 ![Screenshot from 2023-11-13 12-08-49](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/442f6208-3e38-4f22-b74e-88e2461882fa)
 
