@@ -345,11 +345,13 @@ Here the instruction in the assembly code is tested and verified by using gtkwav
 
 The first instruction is ``` 10054:	fc010113          	addi	sp,sp,-64``` .Previously sp(Signal43) was ```000000FF``` after subtracting by 64 sp is```0000000BF```
 
+
 ![ins_ver](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/56d81b4a-9ca5-4419-977f-4b5517430d4c)
+
 
 The next instruction with immediate value operation is ```   10060:	00100793          	li	a5,1``` Here the register a5(Signal58) is loaded with 1.
 
-![ins_ver2](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/5149112f-5c91-47bd-bee3-dab514e6284f
+![ins_ver2](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/5149112f-5c91-47bd-bee3-dab514e6284f)
 
 
 
