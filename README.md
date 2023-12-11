@@ -535,6 +535,8 @@ magic -T /home/emil/.volare/sky130A/libs.tech/magic/sky130A.tech lef read ../../
 ### Design Rule Check(DRC)
 
 ![Screenshot from 2023-11-14 23-16-29](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/29a3a500-0538-41fa-ac07-00db0f31a0d2)
+
+### Performance calculation
 ```
 				1
 Operating Frequency =  ------------------------  =0.037735Ghz
