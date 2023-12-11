@@ -552,7 +552,7 @@ Additional steps
 ![Screenshot from 2023-11-13 12-08-49](https://github.com/IIITB-ARUL/RISC_V-SECURITY_ALARM_SYSTEM/assets/140998631/442f6208-3e38-4f22-b74e-88e2461882fa)
 
 ### Word of Thanks
-I sciencerly thank Mr. Kunal Gosh(Founder/VSD) for guiding me out to complete this flow smoothly.
+I sciencerly thank Mr. Kunal Gosh(Founder/VSD) for guiding me  to complete this flow smoothly.
 
 
 ## Acknowledgements
