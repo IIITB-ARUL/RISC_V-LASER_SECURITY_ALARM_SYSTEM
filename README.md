@@ -539,7 +539,7 @@ magic -T /home/emil/.volare/sky130A/libs.tech/magic/sky130A.tech lef read ../../
 ### Performance calculation
 ```
 				1
-Operating Frequency =  ------------------------  =0.037735Ghz
+Operating Frequency =  ------------------------  =37.735Mhz
                      clock period - slack(setup)
 ```
 ### Signoff
